@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+header {
+  display: none;
+}
+
+@media print, screen and (min-width: 992px) {
+  #header {
+    display: none;
+  }
+  
+  .main {
+    padding: 0;
+  }
+}
+
+@media print, screen and (min-width: 1212px) {
+  .main {
+    padding-bottom: 0;
+  }
+}
+
+
+
+/* ===== Keyvisual Settings ===== */
+
+.container #keyvisual img {
+	width: 100%;
+}
+
+
+@media print, screen and (min-width: 992px) {
+  .main {
+  }
+}
+
+
+
+/* ===== Dates Settings ===== */
+
+.index_cnt {
+	padding: 1rem;
+	background: #00428e url("../../images/common/bg_main.png") no-repeat right top / auto 100%;
+}
+
+@media print, screen and (min-width: 992px) {
+	.index_cnt .date {
+		margin: 1rem 2rem 2rem 2rem;
+	}
+	.index_cnt .date img {
+		width: 506px;
+	}
+}
+
+
+/* ===== News Settings ===== */
+#news {
+	width: 100%;
+  color: #fff;
+	margin: 1rem auto 0 auto;
+  padding: 0.75rem;
+	background: rgba(20,27,58,0.8);
+  box-sizing: border-box;
+}
+#news h2 {
+  font-size: 1rem;
+	text-align: left;
+	margin: 0;
+  padding: 0;
+  background: none;
+	border: none;
+  box-shadow: none;
+}
+#news .news_cnt {
+	height: 200px;
+	margin-top: 5px;
+}
+#news dl {
+  overflow: auto;
+}
+#news dl dt {
+  font-weight: 700;
+	margin: 0.5em 0.5em 0 0;
+}
+#news dl dd {
+  word-break: break-all;
+	margin:  0 0 1em 0;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #fff;
+}
+#news dl dd a {
+  color: #fff;
+  text-decoration: underline;
+}
+#news dl dd a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+@media print, screen and (min-width: 768px) {
+  #news h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+  }
+	#news .news_cnt {
+		height: 116px;
+	}
+	#news dl dt {
+    clear: left;
+    float: left;
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+	}
+	#news dl dd {
+    margin-bottom: 0;
+    padding-left: 9em;
+		border-bottom: 0;
+	}
+}
+
+@media print, screen and (min-width: 992px) {
+	#news {
+		padding: 1.5rem;
+		box-sizing: border-box;
+	}
+	#news h2 {
+		font-weight: 900;
+		font-size: 1rem;
+		text-align: left;
+		margin-bottom: 1rem;
+	}
+	#news .news_cnt {
+		height: 100px;
+	}
+	#news dl {
+		font-size: 1rem;
+		border-bottom: 1px solid #fff;
+	}
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
